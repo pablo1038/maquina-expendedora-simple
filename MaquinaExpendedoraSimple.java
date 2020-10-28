@@ -37,7 +37,7 @@ public class MaquinaExpendedoraSimple {
      * Devuelve el total dinero acumulado
      */
     public int totalDineroAcumulado(){
-        return totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
+        return totalDineroAcumulado;
     }    
     /**
      * Devuelve el precio del billete
@@ -73,7 +73,7 @@ public class MaquinaExpendedoraSimple {
         System.out.println();
 
         // Actualiza el total de dinero acumulado en la maquina
-        
+        totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
     }
